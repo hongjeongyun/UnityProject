@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyIn : MonoBehaviour {
-	
-	
-	
 	void Awake()
 	{
 		this.GetComponent<EnemyMoveUD>().enabled = false; // Start 안됨
 	}
 	
 	void Start () {
-		StartCoroutine(Later());
+		//StartCoroutine(Later());
 	}
 	void Update () {
 		
