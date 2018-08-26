@@ -2,15 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct Center
-{
-	public float x,y;
-	public Center(float x1, float y1)
-	{
-		x = x1;
-		y = y1;
-	}
-}
 public class CharacterMove : MonoBehaviour {	
 	public static float hRotate = 0;
 	void Start () {
@@ -18,8 +9,7 @@ public class CharacterMove : MonoBehaviour {
 	}
 	void Update()
 	{
-		
-		Center center = new Center(Screen.width * 0.5f,Screen.height * 0.5f);
+		Vector2 center = new Vector2(Screen.width * 0.5f,Screen.height * 0.5f);
 
 		Vector3 playerScreenPosion = Camera.main.WorldToScreenPoint(this.transform.position);
 		
