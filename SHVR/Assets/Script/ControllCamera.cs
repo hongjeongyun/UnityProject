@@ -7,6 +7,7 @@ public class ControllCamera : MonoBehaviour {
 	public float MinAngle;
 	public float rotSpeed;
 	void Start () {
+		//git
 	}
 	void Update () {
 		//Debug.Log(this.transform.rotation.x);

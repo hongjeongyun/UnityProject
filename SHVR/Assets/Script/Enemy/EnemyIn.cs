@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyIn : MonoBehaviour {
+<<<<<<< HEAD
 	public float speed;
+=======
+>>>>>>> 57f3864400c42eaa3f85cc780f072a23e30e657b
 	void Awake()
 	{
 		this.GetComponent<EnemyMoveUD>().enabled = false; // Start 안됨
 	}
 	void Start () {
-		StartCoroutine(Later());
+		//StartCoroutine(Later());
 	}
 	void Update()
 	{
