@@ -66,6 +66,7 @@
      <Compile Include="Assets\Script\Misc\Parallaxing.cs" />
      <Compile Include="Assets\Script\Player\Bullet.cs" />
      <Compile Include="Assets\Script\Player\BulletDestroyTimer.cs" />
+     <Compile Include="Assets\Script\Player\BulletScale.cs" />
      <Compile Include="Assets\Script\Player\CharacterAnimation.cs" />
      <Compile Include="Assets\Script\Player\CharacterMove.cs" />
      <Compile Include="Assets\Script\Player\CharacterShoot.cs" />

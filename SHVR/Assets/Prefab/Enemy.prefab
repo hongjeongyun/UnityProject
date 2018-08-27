@@ -20,11 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4352950828822648}
   - component: {fileID: 33260245922509868}
-  - component: {fileID: 136328000644899148}
   - component: {fileID: 23469280747381952}
   - component: {fileID: 114942702750237286}
   - component: {fileID: 114674236371359554}
-  m_Layer: 0
+  - component: {fileID: 114959114644442186}
+  - component: {fileID: 65928279287287038}
+  m_Layer: 12
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1289566315869604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.025452, y: -51.444183, z: 140.5307}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.5, y: 0.16, z: 10.285}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,6 +86,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1289566315869604}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65928279287287038
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1289566315869604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114674236371359554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,6 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab54dfe2672d3e4d9d28ae06878ba7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!114 &114942702750237286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,18 +121,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea5eb460ff735b48b2da67e637ba300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 1
-  udSpeed: 2
---- !u!136 &136328000644899148
-CapsuleCollider:
+  offset: 0.1
+  udSpeed: 0.1
+--- !u!114 &114959114644442186
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1289566315869604}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e0f1e3b28a9cc0468e03c0f974ed375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
