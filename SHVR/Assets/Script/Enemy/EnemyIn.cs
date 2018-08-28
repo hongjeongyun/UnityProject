@@ -6,11 +6,9 @@ public class EnemyIn : MonoBehaviour {
 	private bool end = false;
 	public float speed;
 	private Vector3 screenPoint;
-	void Awake()
-	{
-		this.GetComponent<EnemyMoveUD>().enabled = false; // Start 안됨
-	}
+	
 	void Start () {
+		this.GetComponent<EnemyMoveUD>().enabled = false; // Start 안됨 은 착각
 		Vector3 screenPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width*0.5f,Screen.height*0.5f,0));
 		Vector3 pos = this.transform.position;
 		pos.y = screenPos.y;
